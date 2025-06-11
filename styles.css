@@ -1,10 +1,10 @@
 body{
     margin: 0;
-    background-color: antiquewhite;
+    background-color: darkslategray;
 }
 
 header{
-    background-color: cyan;
+    background-color: darkcyan;
     color: white;
     border-radius: 10px;
 }
