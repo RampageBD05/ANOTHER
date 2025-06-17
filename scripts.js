@@ -1,19 +1,18 @@
 tsParticles.load("tsparticles", {
-  fullScreen: { enable: false },
   particles: {
-    number: { value: 80 },
+    number: { value: 60 },
     color: { value: "#ffffff" },
     shape: { type: "circle" },
-    opacity: { value: 0.5 },
-    size: { value: 3 },
-    move: { enable: true, speed: 2 }
+    opacity: { value: 0.4 },
+    size: { value: 2 },
+    move: { enable: true, speed: 1 }
   },
   interactivity: {
     events: {
-      onHover: { enable: true, mode: "repulse" }
+      onhover: { enable: true, mode: "repulse" }
     },
     modes: {
-      repulse: { distance: 100 }
+      repulse: { distance: 80 }
     }
   }
 });
