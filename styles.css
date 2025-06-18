@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: darkslategray;
 }
 
@@ -10,7 +12,10 @@ header{
 }
 .custom-image
 {
+  max-width: 50%;
+  height: auto;
   border-radius: 75%;
+  object-fit: contain;
 }
 
 .music-image {
@@ -28,5 +33,7 @@ header{
 
 footer
 {
-     background-color: darkcyan;
+  margin: 0;
+  padding: 1rem;
+  background-color: darkcyan;
 }
