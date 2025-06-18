@@ -1,20 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".music-image");
-  let currentAudio = null;
+document.querySelectorAll('.music-image').forEach(img => {
+  img.addEventListener('click', () => {
+    const audioId = img.getAttribute('data-audio');
+    const audioElement = document.getElementById(audioId);
 
-  images.forEach(img => {
-    img.addEventListener("click", () => {
-      const audioSrc = img.getAttribute("data-audio");
-
-      // If audio is already playing, stop it
-      if (currentAudio && !currentAudio.paused) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
+    // Pause any other playing audio
+    document.querySelectorAll('audio').forEach(audio => {
+      if (audio !== audioElement) {
+        audio.pause();
+        audio.currentTime = 0;
       }
-
-      // Create new audio element and play
-      currentAudio = new Audio(audioSrc);
-      currentAudio.play();
     });
+
+    // Play the clicked image's audio
+    if (audioElement.paused) {
+      audioElement.play();
+    } else {
+      audioElement.pause();
+      audioElement.currentTime = 0;
+    }
   });
 });

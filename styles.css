@@ -12,7 +12,7 @@ header{
 }
 .custom-image
 {
-  max-width: 50%;
+  
   height: auto;
   border-radius: 75%;
   object-fit: contain;
@@ -36,4 +36,7 @@ footer
   margin: 0;
   padding: 1rem;
   background-color: darkcyan;
+}
+audio {
+  display: none; /* Hides audio controls */
 }

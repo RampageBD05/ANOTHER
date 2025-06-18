@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matome Morotoba - Projects Page</title>
-    <link rel= " stylesheet" href="styles.css">
+    <link rel= "stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   </head>
@@ -50,6 +50,7 @@
    <header class="text-center p-5">
       <h1>Project Page</h1>
       <p>Feel Free to explore all the projects shown below, from images to an accompanying soundtrack</p>
+      <p>Click on the Images to see what happens</p>
     </header>
 
     <!--Image and Music Section-->
@@ -59,13 +60,23 @@
 
     <div class="col-md-6">
       <div class="image-audio-container">
-        <img src="Images/GhostMe.jpg" class="music-image img-fluid w-50 custom-image" data-audio="Music/GhostMe.wav" alt="">
+        <img src="Images/GhostMe.jpg" class="music-image img-fluid w-50 custom-image" data-audio="GhostMe" alt="">
+        <audio id="GhostMe" src="Music/Ghost Me.wav"></audio>
       </div>
+      
     </div>
 
     <div class="col-md-6">
       <div class="image-audio-container">
-        <img src="Images/Lofi.jpg" class="music-image img-fluid w-50 custom-image" data-audio="Sound/Atlas.wav" alt="">
+        <img src="Images/Lofi.jpg" class="music-image img-fluid w-50 custom-image" data-audio="Atlas" alt="">
+        <audio id="Atlas" src="Music/Atlas.wav"></audio>
+      </div>
+    </div>
+
+     <div class="col-md-6">
+      <div class="image-audio-container">
+        <img src="Images/HeartBeat.jpg" class="music-image img-fluid w-50 custom-image" data-audio="LovingYou" alt="">
+        <audio id="LovingYou" src="Music/Loving You.mp3"></audio>
       </div>
     </div>
 
