@@ -6,5 +6,14 @@ body{
 header{
     background-color: darkcyan;
     color: white;
-    border-radius: 10px;
+    
+}
+.custom-image
+{
+  border-radius: 75%;
+}
+
+footer
+{
+     background-color: darkcyan;
 }
